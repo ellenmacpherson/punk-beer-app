@@ -3,6 +3,18 @@
     border: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -15vh;
+}
+
 .hero-header {
     /* top: -200px; */
     height: 80vh;
@@ -42,12 +54,12 @@ main {
 
 .container {
     padding: 0;
-    margin-top: 10vh;
+    margin: 10vh 0;
     text-align: center;
 }
 
 .flipCard {
-    margin: 3vh;
+    margin: 30px;
     display: inline-block;
     background-color: transparent;
     width: 25%;
@@ -107,6 +119,10 @@ main h1 {
     text-align: center;
 }
 
+.main-header {
+    padding-top: 5%;
+}
+
 main h2 {
     font-size: 1.5rem;
     padding: 10px 0px;
@@ -130,6 +146,28 @@ main p {
 
 .beerDescription {
     font-weight: bold;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    bottom: 0;
+    height: 15vh;
+    width: 90%;
+    margin: 0 auto;
+}
+
+footer a {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+}
+
+footer a:hover {
+    color: lightsalmon;
+
 }
 
 @media screen and (max-width: 800px) {
